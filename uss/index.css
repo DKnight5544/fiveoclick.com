@@ -1,0 +1,74 @@
+﻿/* Mobile-first styles */
+
+:root {
+    --body-bg-clr: #2c525e;
+    --body-fg-clr: #ac6049;
+    --para-bg-clr: #2c525e;
+    --para-fg-clr: #fef6cf;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--body-bg-clr);
+    /*font-family: Roboto;*/
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing:1.5px;
+}
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    box-sizing: border-box;
+    font-size:20px;
+    position:relative;
+    overflow:hidden;
+}
+
+
+.header-image {
+    width: 100%;
+    display: block;
+}
+
+.header-text{
+    position:absolute;
+    font-size:50px;
+    top:30px;
+    left:30px;
+    color: var(--body-bg-clr);
+}
+
+
+
+
+p {
+    line-height: 30px;
+    /*border: 1px solid var(--para-fg-clr);*/
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px var(--para-fg-clr);
+    padding: 7px;
+    background-color: var(--para-bg-clr);
+    color: var(--para-fg-clr);
+}
+
+a {
+    text-decoration: none;
+    color: var(--para-fg-clr);
+}
+
+/* Styles for screens that are at least 800px wide */
+@media screen and (min-width: 1024px) {
+
+    .container {
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
